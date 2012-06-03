@@ -334,7 +334,6 @@ class GridHelper extends AppHelper {
 		
 		if(isset($column['options']['element']) && $column['options']['element'] != false){
 			$View = $this->_View;
-				
 			return  $View->element($this->elemDir . DS . $column['options']['element'], array('result' => $value));
 		} else {
 			if(isset($column['options']['type']) && $column['options']['type'] == 'date'){
@@ -367,7 +366,6 @@ class GridHelper extends AppHelper {
 						'options' => $action['options']
 					);
 				}
-			
 				return $View->element($this->elemDir . DS . 'column_actions', array( 'actions' => $actions), array('plugin' => $this->plugin_name));
 			}
 		}
